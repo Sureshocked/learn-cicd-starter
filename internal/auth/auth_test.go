@@ -14,7 +14,7 @@ func TestGetAPIKey(t *testing.T) {
 		if err != nil {
 			t.Errorf("Expected no error, got %v", err)
 		}
-		if key != "wrongkey" {
+		if key != "testkey123" {
 			t.Errorf("Expected key 'testkey123', got '%s'", key)
 		}
 	})
