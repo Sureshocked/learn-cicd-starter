@@ -1,3 +1,57 @@
+Full-Stack Web Application with CI/CD Pipeline
+Overview
+This repository contains a full-stack web application deployed with a robust CI/CD pipeline using GitHub Actions, Google Cloud Platform (GCP), and Turso database.
+Infrastructure
+Continuous Integration
+Our CI pipeline runs on every Pull Request and ensures code quality through:
+
+✅ Unit Testing
+✅ Code Formatting Checks
+✅ Linting
+✅ Security Scans
+
+Continuous Deployment
+When changes are merged into the main branch, our CD pipeline automatically:
+
+Builds the server binary
+Creates a Docker image
+Pushes the image to Google Artifact Registry
+Deploys to Google Cloud Run with zero-downtime deployment
+
+Database
+
+Powered by Turso, a cloud-hosted SQLite database
+Ensures reliable data persistence
+Managed database solution
+
+Technology Stack
+
+Cloud Platform: Google Cloud Platform (GCP)
+
+Cloud Run for serverless container deployment
+Artifact Registry for Docker image storage
+
+
+Database: Turso (Cloud-hosted SQLite)
+CI/CD: GitHub Actions
+Containerization: Docker
+
+Infrastructure Features
+
+Automated deployment process
+Zero-downtime deployments
+Automatic scaling
+SSL/TLS certificate management
+Load balancing
+DNS management
+
+Development Notes
+Local Development
+[Add instructions for local development setup]
+Deployment
+The application automatically deploys when changes are merged into the main branch. No manual deployment steps are required.
+
+
 ![CI](https://github.com/Sureshocked/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
 # learn-cicd-starter (Notely)
 
